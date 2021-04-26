@@ -1,0 +1,70 @@
+<html>
+<head>
+    <style>
+        body{
+            background-image: url('back.jpg');
+            background-repeat: no-repeat;
+            font-family: sans-serif;
+        }
+        .calc{
+            background-color: rgb(74, 72, 72);
+            height: 60%;
+            width: 25%;
+            margin-top: 10%;
+            margin-left: 40%;
+            border-radius: 10px;
+        }
+        table{
+            height: 100%;
+            width: 100%;
+        }
+        td{
+            text-align: center;
+            color: white;
+            cursor: pointer;
+        }
+        #res{
+            text-align: left;
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            padding: 1.5% 5%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="calc">
+        <table>
+            <tr>
+                <td colspan="4" id="res">0</td>
+            </tr>
+            <tr>
+                <td onclick="dig('7')">7</td>
+                <td onclick="dig('8')">8</td>
+                <td onclick="dig('9')">9</td>
+                <td onclick="dig('+')">+</td>
+            </tr>
+            <tr>
+                <td onclick="dig('4')">4</td>
+                <td onclick="dig('5')">5</td>
+                <td onclick="dig('6')">6</td>
+                <td onclick="dig('-')">-</td>
+            </tr>
+            <tr>
+                <td onclick="dig('1')">1</td>
+                <td onclick="dig('2')">2</td>
+                <td onclick="dig('3')">3</td>
+                <td onclick="dig('*')">*</td>
+            </tr>
+            <tr>
+                <td onclick="clr()">C</td>
+                <td onclick="dig('0')">0</td>
+                <td onclick="calc()">=</td>
+                <td onclick="dig('/')">/</td>
+            </tr>              
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
